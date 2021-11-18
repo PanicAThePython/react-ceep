@@ -1,0 +1,7 @@
+.item__titulo {
+    font-size: 18px;
+    color: rgb(143, 86, 196);
+  }
+.item__conteudo{
+    letter-spacing: 0.5px;
+  }
