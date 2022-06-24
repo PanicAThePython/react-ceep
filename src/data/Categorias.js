@@ -6,6 +6,7 @@ export default class Categorias{
 
     criarCategoria(nomeCategoria) {
         this.categorias.push(nomeCategoria);
+        this.notificar();
       }
 
     inscrever(func){

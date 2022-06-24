@@ -8,6 +8,15 @@ export default class FormularioCadastro extends Component {
     this.titulo = "";
     this.texto = "";
     this.categoria = "";
+    this.state = {categorias:[]}
+  }
+
+  componentDidMount(){
+    this.props.categorias.inscrever(this._novasCategorias.bind(this));
+  }
+
+  _novasCategorias(cats){
+    this.setState({...this.state, cats})
   }
 
   _handleMudancaCategoria(evento){
@@ -37,7 +46,7 @@ export default class FormularioCadastro extends Component {
       <form className="formulario" onSubmit={this._criarNota.bind(this)}>
         <select className="formulario__categ" onChange={this._handleMudancaCategoria.bind(this)}>
             <option>Selecione uma categoria</option>
-            {this.props.categorias.map((cat, index)=>{
+            {this.state.categorias.map((cat, index)=>{
               return <option value={cat} key={index}>{cat}</option>
               })}
         </select>

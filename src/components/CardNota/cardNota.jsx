@@ -8,6 +8,10 @@ export default class CardNota extends Component {
     this.props.apagarNota(this.props.index)
   }
 
+  componentDidMount(){
+    console.log(this.props)
+  }
+
   render() {
     return (
       <section>

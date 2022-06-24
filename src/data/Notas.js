@@ -9,17 +9,18 @@ export default class ArrayNotas{
     }
 
     notificar(){
-        this._inscritos.forEach(func=>func(this.categorias));
+        this._inscritos.forEach(func=>func(this.notas));
     }
 
     criarNota(titulo, texto, categoria) {
         const novaNota = new Nota(titulo, texto, categoria);
-        console.log(novaNota, this.notas)
         this.notas.push(novaNota);
+        this.notificar();
     };
 
     deletarNota(index){
         this.notas.splice(index, 1);
+        this.notificar();
     }
 }
 
