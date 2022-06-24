@@ -15,13 +15,12 @@ export default class FormularioCadastro extends Component {
     this.props.categorias.inscrever(this._novasCategorias.bind(this));
   }
 
-  _novasCategorias(cats){
-    this.setState({...this.state, cats})
+  _novasCategorias(categorias){
+    this.setState({...this.state, categorias})
   }
 
   _handleMudancaCategoria(evento){
     evento.stopPropagation();
-    console.log(evento)
     this.categoria = evento.target.value;
   }
 
