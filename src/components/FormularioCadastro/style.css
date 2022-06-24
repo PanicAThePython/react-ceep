@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 305px;
-    height: 350px;
+    height: 380px;
     /* margin: 20px auto; */
     align-items: center;
     border: 1px solid #ccc;
@@ -13,12 +13,17 @@
   }
   
   .formulario__titulo,
-  .formulario__notas {
+  .formulario__notas,
+  .formulario__categ {
     outline: 0;
     width: 230px;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid rgb(143, 86, 196);
+  }
+
+  .formulario__categ{
+    width: 250px;
   }
   .formulario__notas {
     resize: none;

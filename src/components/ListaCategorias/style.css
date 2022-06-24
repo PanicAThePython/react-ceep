@@ -1,0 +1,25 @@
+.categorias__item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    /* width: 170px; */
+    list-style: none;
+
+  }
+
+.categorias{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.categorias__titulo{
+    color: rgb(143, 86, 196);
+}
+
+.sessao__categorias{
+    display: flex;
+    align-items: baseline;
+}

@@ -5,3 +5,9 @@
 .item__conteudo{
     letter-spacing: 0.5px;
   }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
